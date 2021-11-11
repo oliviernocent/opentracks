@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let now = new Date();
         let fileName = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}_${now.getHours()}H${now.getMinutes()}.csv`;
 
-        let blob = new Blob([fileContent], { type: 'text/csv;charset=utf-8;'});
+        let blob = new Blob([fileContent], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8;'});
         let url = URL.createObjectURL(blob);
 
         let anchor = document.createElement('a');
