@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     let url = URL.createObjectURL(blob);
     */
 
-    let url = `mailto:name@mail.com?subject=${fileName}&body=${fileContent}`;
+    let url = `mailto:john@doe.com?subject=${fileName}&body=${fileContent}`;
 
     let anchor = document.createElement('a');
     //anchor.download = fileName;
